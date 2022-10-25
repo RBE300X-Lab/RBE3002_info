@@ -5,7 +5,7 @@ Username: `rbe` | Password: `RBE3002`
 [Link to VM Image]()
 
 **Steps**
-1. Clone this repo
+1. Download the RBE3002.pvm.zip
 2. Move the RBE3002.pvm.zip file to your Parallels VM Directory `(ex: /Users/<Your Username>/Parallels/)`
 3. Unzip the file (this will take a few minutes)
 4. Open Parallels Desktop
@@ -21,7 +21,7 @@ Username: `rbe` | Password: `RBE3002`
 [Link to VM Image]()
 
 **Steps**
-1. Clone this repo
+1. Download the RBE3002.utm.zip
 2. Move the RBE3002.utm.zip file to your UTM VM Directory 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(ex: /Users/<Your Username>/Library/Containers/com.utmapp.UTM/Data/Documents/)`
