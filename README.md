@@ -8,7 +8,7 @@ Look below for guidance on the labs
 - Use the robot on a random table where it might fall
 
 **PLEASE DO:**
-- Use the cable instead of the battery as much as possible (the batteries have a limited number of rechearges)
+- Use the cable instead of the battery as much as possible (the batteries have a limited number of recharges)
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
 
