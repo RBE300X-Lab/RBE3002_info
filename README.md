@@ -1,11 +1,8 @@
 ## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for Arm Macs
 Username: `rbe` | Password: `RBE3002`
 
-### Parallels
-[Link to VM Image]()
-
-**Steps**
-1. Download the RBE3002.pvm.zip
+### Parallels Step
+1. Download the RBE3002.pvm.zip from the [RBE 3002 Info Repo](https://drive.google.com/file/d/1Qjd39osvCf649oTGNqnGokKSpg6hUb2-/view?usp=sharing)
 2. Move the RBE3002.pvm.zip file to your Parallels VM Directory `(ex: /Users/<Your Username>/Parallels/)`
 3. Unzip the file (this will take a few minutes)
 4. Open Parallels Desktop
@@ -17,11 +14,8 @@ Username: `rbe` | Password: `RBE3002`
 10. Log into [netreg.wpi.edu](netreg.wpi.edu) and click `Register New Device`
 11. Use the newly generate MAC Address to register your VM on the network
 
-### UTM
-[Link to VM Image]()
-
-**Steps**
-1. Download the RBE3002.utm.zip
+### UTM Steps
+1. Download the RBE3002.utm.zip from the [RBE 3002 Info Repo](https://drive.google.com/file/d/1KRnNGwwcMEHHQjOH4d5F936aHC6j26Py/view?usp=sharing)
 2. Move the RBE3002.utm.zip file to your UTM VM Directory 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(ex: /Users/<Your Username>/Library/Containers/com.utmapp.UTM/Data/Documents/)`
