@@ -1,3 +1,17 @@
+# RBE 3002 Info Repository
+Look below for guidance on the labs
+
+## Turtlebot Guidelines
+
+**DO NOT DO:**
+- Leave the battery alone, charging forever
+- Use the robot on a random table where it might fall
+
+**PLEASE DO:**
+- Use the cable instead of the battery as much as possible (the batteries have a limited number of rechearges)
+- Always store the battery in the provided bag
+- Use the robot only on the ground or in the arena we made available
+
 ## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for Arm Macs
 Username: `rbe` | Password: `RBE3002`
 
