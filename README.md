@@ -16,7 +16,7 @@ Look below for guidance on the labs
 Username: `rbe` | Password: `RBE3002`
 
 ### Parallels Step
-1. Download the RBE3002.pvm.zip from the [**HERE**](https://drive.google.com/file/d/1Qjd39osvCf649oTGNqnGokKSpg6hUb2-/view?usp=sharing)
+1. Download the RBE3002.pvm.zip from the [**HERE**](https://drive.google.com/file/d/1tyTBqvedI3-AxBXs0ogOPc2BovvY22FM/view?usp=sharing)
 2. Move the RBE3002.pvm.zip file to your Parallels VM Directory `(ex: /Users/<Your Username>/Parallels/)`
 3. Unzip the file (this will take a few minutes)
 4. Open Parallels Desktop
@@ -29,7 +29,7 @@ Username: `rbe` | Password: `RBE3002`
 11. Use the newly generate MAC Address to register your VM on the network
 
 ### UTM Steps
-1. Download the RBE3002.utm.zip from the [**HERE**](https://drive.google.com/file/d/1KRnNGwwcMEHHQjOH4d5F936aHC6j26Py/view?usp=sharing)
+1. Download the RBE3002.utm.zip from the [**HERE**](https://drive.google.com/file/d/1CPwP1I6Bm2KLlnL_hFs11FlJVqSdyK50/view?usp=sharing)
 2. Move the RBE3002.utm.zip file to your UTM VM Directory 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`(ex: /Users/<Your Username>/Library/Containers/com.utmapp.UTM/Data/Documents/)`
