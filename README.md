@@ -1,6 +1,9 @@
 # RBE 3002 Info Repository
 Look below for guidance on the labs
 
+## WE ARE USING ROS NOETIC AND UBUNTU 20.04
+These are the only supported versions
+
 ## Turtlebot Guidelines
 
 **DO NOT DO:**
@@ -11,6 +14,16 @@ Look below for guidance on the labs
 - Use the cable instead of the battery as much as possible (the batteries have a limited number of recharges)
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
+
+## Installing ROS
+- Please copy and paste terminal commands while running the ROS installation. You can do this CTR+SHIFT+C to copy from the terminal and CTR+SHIFT+V for pasting into the terminal
+
+- If you have errors at sudo apt install curl, run sudo apt-get install --fix-missing and then try the first command again. Proceed from there. 
+
+- You will need to add source /opt/ros/noetic/setup.bash to your .bashrc file. This file is run every time you open a new terminal, and will source ROS automatically for you. You can access this file by running gedit ~/.bashrc (or similar text editing options). Paste source /opt/ros/noetic/setup.bash into this file. 
+
+- Note in the above command that you should be using ROS Noetic. Anytime you see kinetic or melodic in a command, you need to replace it with noetic. 
+
 
 ## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for Arm Macs
 Username: `rbe` | Password: `RBE3002`
