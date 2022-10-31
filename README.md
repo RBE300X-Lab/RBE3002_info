@@ -12,6 +12,7 @@ These are the only supported versions
 
 **PLEASE DO:**
 - Use the cable instead of the battery as much as possible (the batteries have a limited number of recharges)
+ - If you are using the robot with the cable, place the robot on the power supply so the wheels do not touch the ground (no robots falling on the floor)
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
 
