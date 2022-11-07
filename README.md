@@ -41,6 +41,8 @@ Username: `rbe` | Password: `RBE3002`
 9. Click `Advanced..` and then `Generate` a new MAC Address
 10. Log into [netreg.wpi.edu](netreg.wpi.edu) and click `Register New Device`
 11. Use the newly generate MAC Address to register your VM on the network
+ - If you get either a `Multicast MAC Addresses` or `Locally Administered Addresses (LAA)` errors, change the second character of the MAC Address (the **X**: 0**X**-B0-D0-63-C2-26) to an `8` and retry
+ - This is because the 2 least significant bits of the first octet (the first two characters) are used as flags for device administration (the Universal vs Local and Unicast vs Multicast bits respectively) for WPI Netreg they must be set to 0
 
 ### UTM Steps
 1. Download the RBE3002.utm.zip from the [**HERE**](https://drive.google.com/file/d/1CPwP1I6Bm2KLlnL_hFs11FlJVqSdyK50/view?usp=sharing)
@@ -56,3 +58,5 @@ Username: `rbe` | Password: `RBE3002`
 8. Generate a new MAC Address using `random` 
 9. Log into [netreg.wpi.edu](netreg.wpi.edu) and click `Register New Device`
 10. Use the newly generate MAC Address to register your VM on the network
+ - If you get either an `Locally Administered Addresses (LAA)` or `Multicast MAC Addresses` errors, change the second character of the MAC Address (the **X**: 0**X**-B0-D0-63-C2-26) to an `8` and retry
+ - This is because the 2 least significant bits of the first octet (the first two characters) are used as flags for device administration (the Universal vs Local and Unicast vs Multicast bits respectively) for WPI Netreg they must be set to 0
