@@ -26,6 +26,13 @@ These are the only supported versions
 - Note in the above command that you should be using ROS Noetic. Anytime you see kinetic or melodic in a command, you need to replace it with noetic. 
 
 
+## Fixing View Frames
+- With the switch to Python3, the tf scirpt `view_frames` is broken, to fix it, follow these instructions
+- Edit the source code by running: `sudo nano /opt/ros/noetic/lib/tf/view_frames`
+ - Other editors are allowed, but this does require `sudo` access (editing files in protected directories), so it cannot be done on the lab computers
+- Replace line 89 (`m = (r.search(vstr))`) with `m = r.search(vstr.decode('utf-8'))`
+
+
 ## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for Arm Macs
 Username: `rbe` | Password: `RBE3002`
 
