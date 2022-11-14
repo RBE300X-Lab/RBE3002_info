@@ -17,19 +17,27 @@ These are the only supported versions
 - Use the robot only on the ground or in the arena we made available
 
 ## Installing ROS
-- Please copy and paste terminal commands while running the ROS installation. You can do this CTR+SHIFT+C to copy from the terminal and CTR+SHIFT+V for pasting into the terminal
+- Please copy and paste terminal commands while running the ROS installation. You can do this `CTRL + SHIFT + C` to copy from the terminal and `CTRL + SHIFT + V` for pasting into the terminal
 
-- If you have errors at sudo apt install curl, run sudo apt-get install --fix-missing and then try the first command again. Proceed from there. 
+- If you have errors at `sudo apt install curl`, run `sudo apt-get install --fix-missing` and then try the first command again. Proceed from there. 
 
-- You will need to add source /opt/ros/noetic/setup.bash to your .bashrc file. This file is run every time you open a new terminal, and will source ROS automatically for you. You can access this file by running gedit ~/.bashrc (or similar text editing options). Paste source /opt/ros/noetic/setup.bash into this file. 
+- You will need to add `source /opt/ros/noetic/setup.bash` to your .bashrc file. This file is run every time you open a new terminal, and will source ROS automatically for you. You can access this file by running `gedit ~/.bashrc` (or similar text editing options). Paste `source /opt/ros/noetic/setup.bash` into this file. 
+ - Also add source `~/catkin_ws/devel/setup.bash` to your .bashrc as well, this can prevent issues when adding packages to your catkin workspace
 
 - Note in the above command that you should be using ROS Noetic. Anytime you see kinetic or melodic in a command, you need to replace it with noetic. 
 
+## Faster Gazebo Quit
+- Edit the roslaunch nodeprocess Python script using `sudo nano /opt/ros/noetic/lib/python3/dist-packages/roslaunch/nodeprocess.py`
+  - Other editors are allowed, but this does require `sudo` access (editing files in protected directories), so it cannot be done on the lab computers
+- Change the default timeout values:
+  - `DEFAULT_TIMEOUT_SIGINT` on line 59 will make Gazebo quit faster, we suggest changing this value from the default 15 to 1
+  - `DEFAULT_TIMEOUT_SIGTERM` on line 60 will make ROS quit faster if something hangs and will not close any other way, keeping the default 2 is fine
+    - If something has hung (like a Python infinite loop), you can also force quit them from the terminal using `CTRL + \`
 
 ## Fixing View Frames
 - With the switch to Python3, the tf scirpt `view_frames` is broken, to fix it, follow these instructions
 - Edit the source code by running: `sudo nano /opt/ros/noetic/lib/tf/view_frames`
- - Other editors are allowed, but this does require `sudo` access (editing files in protected directories), so it cannot be done on the lab computers
+  - Other editors are allowed, but this does require `sudo` access (editing files in protected directories), so it cannot be done on the lab computers
 - Replace line 89 (`m = (r.search(vstr))`) with `m = r.search(vstr.decode('utf-8'))`
 
 
