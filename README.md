@@ -1,6 +1,8 @@
 # RBE 3002 Info Repository
 Look below for guidance on the labs
 
+The SAs have provided a sample .bashrc file, which can be found [**HERE**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/.bashrc)
+
 ## WE ARE USING ROS NOETIC AND UBUNTU 20.04
 These are the only supported versions
 
@@ -23,8 +25,9 @@ These are the only supported versions
 
 - You will need to add `source /opt/ros/noetic/setup.bash` to your .bashrc file. This file is run every time you open a new terminal, and will source ROS automatically for you. You can access this file by running `gedit ~/.bashrc` (or similar text editing options). Paste `source /opt/ros/noetic/setup.bash` into this file. 
  - Also add source `~/catkin_ws/devel/setup.bash` to your .bashrc as well, this can prevent issues when adding packages to your catkin workspace
+ - There is a sample .bashrc in this repository, which can be found [**HERE**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/.bashrc)
 
-- Note in the above command that you should be using ROS Noetic. Anytime you see kinetic or melodic in a command, you need to replace it with noetic. 
+- Note in the above command that you should be using ROS Noetic. Anytime you see kinetic or melodic in a command, you need to replace it with noetic.
 
 ## Faster Gazebo Quit
 - Edit the roslaunch nodeprocess Python script using `sudo nano /opt/ros/noetic/lib/python3/dist-packages/roslaunch/nodeprocess.py`
