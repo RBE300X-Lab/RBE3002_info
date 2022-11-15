@@ -27,4 +27,4 @@ These instructions are for the various problems people have run into. To report 
 ## A* / Visualization  
 ### When I try to visualize my algorithm, RViz displays old information
 
- - Since RViz listens to topics, and those topics cna be publishing information very quickly, it sometimes lags behind the most recent data. Add a small delay (0.01 second) to allow RVzi to listen to all topics. 
+ - Since RViz listens to topics, and those topics can be publishing information very quickly, it sometimes lags behind the most recent data. Add a small delay (0.01 second) to allow RVzi to listen to all topics. 
