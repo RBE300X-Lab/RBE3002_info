@@ -18,6 +18,11 @@ These instructions are for the various problems people have run into. To report 
 
 - Your first step should always be resourcing your `.bashrc` and your `~/catkin_ws/devel/setup.bash` (if that is not inside your `.bashrc` already)
 
+### I can't run my new node
+
+- Have you made the node executable yet? To do so, run `chmod +x <file name>.py`.
+  - Without this, a node will not be able to run 
+
 ### When I start my node, it doesn't seem to publish on `\cmd_vel`
 
 - When initiallizing a node, ROS will take a short amount of time to configure the node properly
