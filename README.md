@@ -8,6 +8,8 @@ These are the only supported versions
 
 ## Turtlebot Guidelines
 
+[**Turtlebot Netowork Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md)
+
 **DO NOT DO:**
 - Leave the battery alone, charging forever
 - Use the robot on a random table where it might fall
@@ -18,9 +20,10 @@ These are the only supported versions
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
 
-## Having Trouble With Your Robot
+## Having Trouble With ROS or Your Turtlebot
 
-See [this document](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/troubleshooting.md)
+- See the [**Troubleshooting Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/troubleshooting.md)
+- To report unresolved hardware/Turtlebot issues, please add repair notes to the [**Turtlebot Checklist document**](https://docs.google.com/spreadsheets/d/1kZ19K1iCRrBCk3pxAp74G3OKL1qjZJY5CHfOHSK4x84/edit#gid=0). 
 
 ## Installing ROS
 - Please copy and paste terminal commands while running the ROS installation. You can do this `CTRL + SHIFT + C` to copy from the terminal and `CTRL + SHIFT + V` for pasting into the terminal
