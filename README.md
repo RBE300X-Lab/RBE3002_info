@@ -18,6 +18,10 @@ These are the only supported versions
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
 
+## Having Trouble With Your Robot
+
+See [this document](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/troubleshooting.md)
+
 ## Installing ROS
 - Please copy and paste terminal commands while running the ROS installation. You can do this `CTRL + SHIFT + C` to copy from the terminal and `CTRL + SHIFT + V` for pasting into the terminal
 
