@@ -32,4 +32,9 @@ These instructions are for the various problems people have run into. To report 
 ## A* / Visualization  
 ### When I try to visualize my algorithm, RViz displays old information
 
- - Since RViz listens to topics, and those topics can be publishing information very quickly, it sometimes lags behind the most recent data. Add a small delay (0.01 second) to allow RVzi to listen to all topics. 
+ - Since RViz listens to topics, and those topics can be publishing information very quickly, it sometimes lags behind the most recent data. Add a small delay (0.01 second) to allow RVzi to listen to all topics.
+
+### I get a `For Frame[]: Frame[] does not exist` error in RViz
+ - The `GridCells` message requires some metadata inside the `header` field
+   - Specifically, the reference frame for the CSpace (`"map"` in our case).
+ - Add `msg.header.frame_id = "map"` to the `GridCells` before publishing
