@@ -22,6 +22,9 @@ These instructions are for the various problems people have run into. To report 
 
 - Have you made the node executable yet? To do so, run `chmod +x <file name>.py`.
   - Without this, a node will not be able to run 
+- You're getting a `Package not found` or `Node not found` error
+  - Have you sourced your `.bashrc` and `~/catkin_ws/devel/setup.bash` (should be inside your `.bashrc`)?
+  - Does the top level directory of your package contain `package.xml`, this is require for ROS to learn about your package
 
 ### When I start my node, it doesn't seem to publish on `\cmd_vel`
 
