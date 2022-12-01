@@ -48,3 +48,12 @@ These instructions are for the various problems people have run into. To report 
  - There has been some changes in Noetic that were missed in the lab update. Please make the following changes to fix it. 
  - Open the launch file in your favourite text editor, and edit the Line #20
  - In the field `command`, replace `xacro.py` with `xacro` (delete the `.py` part of it)
+
+
+## No such package/stack `Lab4`
+ - The package `Lab4` was previously named as `rbe3002_final`. When we restructured the code for this lab, the package name changing was overlooked. You have two possible ways to fix this:
+> Please use ONE of the two methods, NOT BOTH
+ 1. Change the directory name to `rbe3002_final` and launch/run the files in it by the same name. This means that you will act like Lab4 is not a thing
+ 2. Replace `rbe3002_final` with `Lab4` in these two files: (Doing this, you can continue refering to the package as `Lab4`)
+		a. CMakeLists.txt
+    b. package.xml
