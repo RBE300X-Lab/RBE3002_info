@@ -41,3 +41,10 @@ These instructions are for the various problems people have run into. To report 
  - The `GridCells` message requires some metadata inside the `header` field
    - Specifically, the reference frame for the CSpace (`"map"` in our case).
  - Add `msg.header.frame_id = "map"` to the `GridCells` before publishing
+
+
+## Launch file in Lab4 not working
+### maze_sim.launch file is not launching
+ - There has been some changes in Noetic that were missed in the lab update. Please make the following changes to fix it. 
+ - Open the launch file in your favourite text editor, and edit the Line #20
+ - In the field `command`, replace `xacro.py` with `xacro` (delete the `.py` part of it)
