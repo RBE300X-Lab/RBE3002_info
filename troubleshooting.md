@@ -58,6 +58,6 @@ These instructions are for the various problems people have run into. To report 
 		a. CMakeLists.txt
     b. package.xml
 
-## Email Do Not Match `catkin_make_pkg`
- - If you are getting an error when running the `catkin_make_pkg` command add a special flag specifying your username
- - Run: `catkin_make_pkg -m [username] [package]`
+## Email Do Not Match `catkin_create_pkg`
+ - If you are getting an error when running the `catkin_create_pkg` command add a special flag specifying your username
+ - Run: `catkin_create_pkg -m [username] [package]`
