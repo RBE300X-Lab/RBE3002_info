@@ -16,7 +16,7 @@ These are the only supported versions
 [**TurtleBot Netowork Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md)
 
 **DO NOT DO:**
-- Leave the battery alone, charging forever
+- Keep the battery with the robot, instead return it to the charging station and plug it in
 - Use the robot on a random table where it might fall
 
 **PLEASE DO:**
