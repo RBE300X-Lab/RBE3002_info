@@ -51,10 +51,10 @@ These are the only supported versions
 - Replace line 89 (`m = (r.search(vstr))`) with `m = r.search(vstr.decode('utf-8'))`
 
 
-## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for Arm Macs
+## Preconfigured Ubuntu 20.04 VMs for RBE 3002 for ARM Macs
 Username: `rbe` | Password: `RBE3002`
 
-### Parallels Step
+### Parallels Steps
 1. Download the RBE3002.pvm.zip from the [**HERE**](https://drive.google.com/file/d/1tyTBqvedI3-AxBXs0ogOPc2BovvY22FM/view?usp=sharing)
 2. Move the RBE3002.pvm.zip file to your Parallels VM Directory `(ex: /Users/<Your Username>/Parallels/)`
 3. Unzip the file (this will take a few minutes)
