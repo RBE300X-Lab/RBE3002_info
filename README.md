@@ -6,14 +6,14 @@ The SAs have provided a sample .bashrc file, which can be found [**HERE**](https
 # WE ARE USING ROS NOETIC AND UBUNTU 20.04
 These are the only supported versions
 
-## Having Trouble With ROS or Your Turtlebot
+## Having Trouble With ROS or Your TurtleBot
 
 - See the [**Troubleshooting Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/troubleshooting.md)
-- To report unresolved hardware/Turtlebot issues, please add repair notes to the [**Turtlebot Checklist document**](https://docs.google.com/spreadsheets/d/1kZ19K1iCRrBCk3pxAp74G3OKL1qjZJY5CHfOHSK4x84/edit#gid=0). 
+- To report unresolved hardware/TurtleBot issues, please add repair notes to the [**TurtleBot Checklist document**](https://docs.google.com/spreadsheets/d/19vTIf3R6pr0AnlmXH2UkKc_VxAR0BwPOOzGj72RvUhc/edit?usp=sharing). 
 
-## Turtlebot Guidelines
+## TurtleBot Guidelines
 
-[**Turtlebot Netowork Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md)
+[**TurtleBot Netowork Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md)
 
 **DO NOT DO:**
 - Leave the battery alone, charging forever
