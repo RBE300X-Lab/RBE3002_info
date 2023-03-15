@@ -1,17 +1,17 @@
 # Troubleshooting
 
-These instructions are for the various problems people have run into. To report unresolved hardware/Turtlebot issues, please add repair notes to the [**Turtlebot Checklist document**](https://docs.google.com/spreadsheets/d/1kZ19K1iCRrBCk3pxAp74G3OKL1qjZJY5CHfOHSK4x84/edit#gid=0). 
+These instructions are for the various problems people have run into. To report unresolved hardware/TurtleBot issues, please add repair notes to the [**TurtleBot Checklist document**](https://docs.google.com/spreadsheets/d/19vTIf3R6pr0AnlmXH2UkKc_VxAR0BwPOOzGj72RvUhc/edit?usp=sharing). 
 
 ## Connecting to the TurtleBot 
 ### I can't SSH into the robot 
 
  - Make sure you are using `ubuntu@[turtlebotname].dyn.wpi.edu` with the password `turtlebot`
- - Check the [**Turtlebot Checklist document**](https://docs.google.com/spreadsheets/d/1kZ19K1iCRrBCk3pxAp74G3OKL1qjZJY5CHfOHSK4x84/edit#gid=0) for any notes relating to your specific bot (some will ask you to use an IP address instead of the hostname to connect)
+ - Check the [**TurtleBot Checklist document**](https://docs.google.com/spreadsheets/d/19vTIf3R6pr0AnlmXH2UkKc_VxAR0BwPOOzGj72RvUhc/edit?usp=sharing) for any notes relating to your specific bot (some might ask you to use an IP address instead of the hostname to connect)
 
 ### I am getting an error when running `roslaunch turtlebot3_bringup turtlebot3_robot.launch` on the robot
 
  - Make sure your `.bashrc` file is correct, and make sure you have correctly added your hostname to the turtlebot `.bashrc`
- - Note that if you are using a different lab computer, this will be different. If you are at all unsure, rerun `ifconfig` and `nslookup` as shown in the [**Turtlebot Netowrk Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md). 
+ - Note that if you are using a different lab computer, this will be different. If you are at all unsure, rerun `ifconfig` and `nslookup` as shown in the [**TurtleBot Netowrk Configuration Guide**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/turtlebot_network_config.md). 
 
 ## General ROS
 ### My new package cannot be found by ROS
