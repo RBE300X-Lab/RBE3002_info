@@ -57,3 +57,7 @@ These instructions are for the various problems people have run into. To report 
  2. Replace `rbe3002_final` with `Lab4` in these two files: (Doing this, you can continue refering to the package as `Lab4`)
 		a. CMakeLists.txt
     b. package.xml
+
+## Email Do Not Match `catkin_make_pkg`
+ - If you are getting an error when running the `catkin_make_pkg` command add a special flag specifying your username
+ - Run: `catkin_make_pkg -m [username] [package]`
