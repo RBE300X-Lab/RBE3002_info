@@ -3,6 +3,8 @@ Look below for guidance on the labs
 
 The SAs have provided a sample .bashrc file, which can be found [**HERE**](https://github.com/RBE300X-Lab/RBE3002_info/blob/main/.bashrc)
 
+To install, run: `cd ~ && curl -O https://raw.githubusercontent.com/RBE300X-Lab/RBE3002_info/main/.bashrc && source .bashrc` in your terminal
+
 # WE ARE USING ROS NOETIC AND UBUNTU 20.04
 These are the only supported versions
 
