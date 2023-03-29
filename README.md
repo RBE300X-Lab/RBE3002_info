@@ -23,9 +23,15 @@ These are the only supported versions
 
 **PLEASE DO:**
 - Use the cable instead of the battery as much as possible (the batteries have a limited number of recharges)
- - If you are using the robot with the cable, place the robot on the power supply so the wheels do not touch the ground (no robots falling on the floor)
+  - If you are using the robot with the cable, place the robot on the power supply so the wheels do not touch the ground (no robots falling on the floor)
 - Always store the battery in the provided bag
 - Use the robot only on the ground or in the arena we made available
+
+**Connecting to a Turtlebot**
+- To connect to your Turtlebot, type `ssh ubuntu@TURTLEBOT-NAME.dyn.wpi.edu` where **TURTLEBOT-NAME** is the name on the turtlebot (ignore the number)
+  - The passowrd for all turtlebots is `turtlebot`
+- To disconnect from the Turtlebot (and leave the robot on), type `exit` in the terminal you ssh'ed from
+- To disconnect and shutdown the Turtlebot, type `sudo shutdown now` in the terminal you ssh'ed from
 
 ## Installing ROS
 - Please copy and paste terminal commands while running the ROS installation. You can do this `CTRL + SHIFT + C` to copy from the terminal and `CTRL + SHIFT + V` for pasting into the terminal
