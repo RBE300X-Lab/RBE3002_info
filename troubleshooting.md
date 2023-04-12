@@ -61,3 +61,33 @@ These instructions are for the various problems people have run into. To report 
 ## Email Do Not Match `catkin_create_pkg`
  - If you are getting an error when running the `catkin_create_pkg` command add a special flag specifying your username
  - Run: `catkin_create_pkg -m [username] [package]`
+
+
+## Robot Position Estimate Errors
+- Sometimes GMapping's and the robot's position estimates do not correlate correctly with each other
+- To fix this:
+  - Add `import tf` to the top of the file 
+  - Add `self.listener = tf.TransformListener()` to the init fucntion
+  - Replace your `update_odometry` method with the following code:
+
+```py
+def update_odometry(self, msg):
+	"""
+	Updates the current pose of the robot.
+	This method is a callback bound to a Subscriber.
+	:param msg [Odometry] The current odometry information.
+	"""
+
+	trans = [0,0]
+	rot = [0,0,0,0]
+	try:
+	    (trans,rot) = self.listener.lookupTransform('/map','/base_footprint',rospy.Time(0)) 
+	except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
+	    print("HEY I DIDN'T WORK")
+	self.px = trans[0]
+	self.py = trans[1]
+
+	quat_list = [rot[0], rot[1], rot[2], rot[3]]
+	(roll, pitch, yaw) = euler_from_quaternion(quat_list)
+	self.pth = yaw
+```
