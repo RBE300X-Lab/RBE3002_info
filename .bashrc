@@ -1,4 +1,4 @@
-# Sample .bashrc - Created by Matthew Haahr (mjhaahr) - 11/14/22
+# Sample .bashrc - Created by Matthew Haahr (mjhaahr) and evelyn maude (amrelk)
 
 # If not running interactively, don't do anything
 case $- in
@@ -49,7 +49,7 @@ export PATH=~/.local/bin:$PATH
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
-alias cm="cd ~/catkin_ws && catkin_make"
+alias cm="pushd ~/catkin_ws && catkin_make && source devel/setup.bash && popd"
 
 # Change <localhost> to your machine's hostname
 # Use ifconfig to find your ip address and nslookup with that ip address to find the hostname 
