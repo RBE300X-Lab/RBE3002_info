@@ -55,7 +55,34 @@ alias cm="pushd ~/catkin_ws && catkin_make && source devel/setup.bash && popd"
 # Use ifconfig to find your ip address and nslookup with that ip address to find the hostname 
 # On the WPI network it will normally be autoreg-####.dyn.wpi.edu
 # (this can be changed at netreg.wpi.edu)
-export ROS_MASTER_URI=http://localhost:11311
-export ROS_HOSTNAME=localhost
+
+# WARNING: AS OF 10/30/2024, IT TAKES 30+ MINUTES FOR YOUR COMPUTER TO 
+# RECEIVE A DNS RECORD IF IT DOESN'T ALREADY HAVE ONE!!!! IF YOU RELY ON
+# YOUR HOSTNAME FOR SETTING YOUR ROS_MASTER_URI, IT MAY TAKE 30 MINUTES 
+# FOR YOUR SYSTEM TO WORK!!
+
+# Use this when the DNS gets fixed :P
+# export ROS_MASTER_URI=http://localhost:11311
+# export ROS_HOSTNAME=localhost
+
+# While the DNS server is still borked, use this in YOUR bashrc:
+export ROS_MASTER_URI=http://$(hostname -I | xargs):11311
+export ROS_HOSTNAME=$(hostname -I | xargs)
+
+# In your TURTLEBOT's bashrc, set ROS_HOSTNAME normally:
+# export ROS_HOSTNAME=toad.dyn.wpi.edu
+
+# In your TURTLEBOT's bashrc, set ROS_MASTER_URI to the IP address of the ssh
+# client that is currently signed in.
+# export ROS_MASTER_URI=http://$(echo $SSH_CLIENT | awk '{ print $1}'):11311
 
 export TURTLEBOT3_MODEL=burger
+
+# Some aliases for network stuff
+ltb() {  # nslookup a turtlebot
+        nslookup $1.dyn.wpi.edu
+}
+ptb() {  # ping a turtlebot
+        ping $1.dyn.wpi.edu
+}
+
